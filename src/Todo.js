@@ -24,7 +24,13 @@ function Todo() {
                 {renderItems}
             </ul>
             <button onClick={() => dispatch(clearTodo())}>Clear</button>
+            <button
+                aria-label="removeTodo"
+                onClick={() => dispatch(removeOne())}>
+                Remove Item form Todo
+            </button>
         </div>
+        
     )
 }
 
